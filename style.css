@@ -1,0 +1,100 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+body {
+    padding: 10px;
+    background-color: #232323;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100svw;
+    height: 100svh;
+    max-width: 100svw;
+    max-height: 100svh;
+}
+h2{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.eyes {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+}
+
+.white {
+    padding: 10px;
+    background-color: aliceblue;
+    height: 100%;
+    width: 35%;
+    overflow: hidden;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    -ms-border-radius: 150px;
+    -o-border-radius: 150px;
+}
+
+.black {
+    height: 30%;
+    width: 33%;
+    background-color: black;
+    border-radius: 100px;
+    animation-name: eye;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    animation-iteration-count: infinite;
+}
+
+@keyframes eye{
+    0%{
+        transform: translate(0px, 170px);
+        -webkit-transform: translate(0px, 170px);
+        -moz-transform: translate(0px, 170px);
+        -ms-transform: translate(0px, 170px);
+        -o-transform: translate(0px, 170px);
+}
+    50%{
+        transform: translate(200px, 170px);
+        -webkit-transform: translate(200px, 170px);
+        -moz-transform: translate(200px, 170px);
+        -ms-transform: translate(200px, 170px);
+        -o-transform: translate(200px, 170px);
+}
+    100%{
+        transform: translate(0px, 170px);
+        -webkit-transform: translate(0px, 170px);
+        -moz-transform: translate(0px, 170px);
+        -ms-transform: translate(0px, 170px);
+        -o-transform: translate(0px, 170px);
+}
+}
+
+@media (max-width:960px) {
+    .white{
+        width:47%;
+        height: 70%;
+    }
+    .black{
+        height: 20%;
+    }
+
+    
+}
